@@ -9,7 +9,7 @@ pipeline{
 		}
 		stages {
 		
-				stage ('stage4') {
+				stage ('stage2') {
 				
 							steps {
 						

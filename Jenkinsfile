@@ -25,7 +25,7 @@ pipeline{
 						
 								sh "rm -rf *"
 								sh "git clone -b 24Q1 https://github.com/mahesh591w/repo1.git"
-								sh "sudo docker cp /mnt/project/repo1/index.html server1://usr/local/apache2/htdocs/"
+								sh "sudo docker cp /mnt/project/repo1/index.html 24Q1://usr/local/apache2/htdocs/"
 						}
 				}
 				stage ('stage3') {
@@ -34,7 +34,7 @@ pipeline{
 						
 								sh "rm -rf *"
 								sh "sudo git clone -b 24Q2 https://github.com/mahesh591w/repo1.git"
-								sh "sudo docker cp /mnt/project/repo1/index.html server2://usr/local/apache2/htdocs/"
+								sh "sudo docker cp /mnt/project/repo1/index.html 24Q2://usr/local/apache2/htdocs/"
 						}
 				}
 				stage ('stage4') {
@@ -43,7 +43,7 @@ pipeline{
 						
 								sh "rm -rf *"
 								sh "sudo git clone -b 24Q3 https://github.com/mahesh591w/repo1.git"
-								sh "sudo docker cp /mnt/project/repo1/index.html server3://usr/local/apache2/htdocs/"
+								sh "sudo docker cp /mnt/project/repo1/index.html 24Q3://usr/local/apache2/htdocs/"
 						}
 				}
 		

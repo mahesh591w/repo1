@@ -19,6 +19,14 @@ pipeline{
 								
 						}
 				}
+				stage ('stage4') {
+				
+							steps {
+						
+								sh "chmod -R 777 /var/lib/docker/volumes/test2/_data/"
+								
+						}
+				}
 		
 			
 		}
